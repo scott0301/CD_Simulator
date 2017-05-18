@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9539952B-3D7C-4BF7-81DE-E0EE17F27004}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CD_Simulator</RootNamespace>
+    <AssemblyName>CD_Simulator</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Devices drive optical.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CD_Param">
+      <HintPath>Library\CD_Param.dll</HintPath>
+    </Reference>
+    <Reference Include="CD_View">
+      <HintPath>Library\CD_View.dll</HintPath>
+    </Reference>
+    <Reference Include="CD_Vision">
+      <HintPath>Library\CD_Vision.dll</HintPath>
+    </Reference>
+    <Reference Include="DispObject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DispObject.dll</HintPath>
+    </Reference>
+    <Reference Include="Matrox.MatroxImagingLibrary, Version=9.0.1949.1, Culture=neutral, PublicKeyToken=5a83d419d44a9d98, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Matrox.MatroxImagingLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WrapperClass">
+      <HintPath>..\..\Library\WrapperClass.dll</HintPath>
+    </Reference>
+    <Reference Include="WrapperMil, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\WrapperMil.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="supports.cs" />
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PaintBrushOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PaintBrushOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Device scanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical joystick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical joystick_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dir top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dir bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dir left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dir right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dir center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quick restart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circle add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\UC_Graph\UC_Graph\UC_Graph.csproj">
+      <Project>{84C13D08-75C9-461D-8476-986B3044CEA7}</Project>
+      <Name>UC_Graph</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recipe load.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recipe save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cam1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cam2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package graphics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TimeMachine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\matchfind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recipe load1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Posterious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\measureHor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\measureCir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\measureHor1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\measureRec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\measureVer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\measureDig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\measureRec1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dir top1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dir left1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dir right1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dir top2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dir bottom1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DrawFigure Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawfigure On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Devices drive optical.ico" />
+    <None Include="Resources\measureOVL.png" />
+    <None Include="Resources\DrawIt.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

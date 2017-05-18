@@ -1,0 +1,8 @@
+D:\Develope\CD_Simulator\CFigure\bin\Debug\CFigure.dll
+D:\Develope\CD_Simulator\CFigure\bin\Debug\CFigure.pdb
+D:\Develope\CD_Simulator\CD_Simulator\Library\CFigure.dll
+D:\Develope\CD_Simulator\CD_Simulator\Library\CFigure.pdb
+D:\Develope\CD_Simulator\CFigure\obj\Debug\CFigure.dll
+D:\Develope\CD_Simulator\CFigure\obj\Debug\CFigure.pdb
+D:\Develope\CD_Simulator\CD_Simulator\CFigure\obj\Debug\CFigure.dll
+D:\Develope\CD_Simulator\CD_Simulator\CFigure\obj\Debug\CFigure.pdb

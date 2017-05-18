@@ -1,0 +1,7 @@
+D:\Develope\CD_Simulator\CD_Simulator\CD_Parameter\CD_Parameter\obj\Debug\ParameterSetting.Parameter.resources
+D:\Develope\CD_Simulator\CD_Simulator\CD_Parameter\CD_Parameter\obj\Debug\UC_Parameter.csproj.GenerateResource.Cache
+D:\Develope\CD_Simulator\CD_Simulator\CD_Parameter\CD_Parameter\obj\Debug\UC_Parameter.csprojResolveAssemblyReference.cache
+D:\Develope\CD_Simulator\CD_Simulator\Library\CD_Param.dll
+D:\Develope\CD_Simulator\CD_Simulator\Library\CD_Param.pdb
+D:\Develope\CD_Simulator\CD_Simulator\CD_Parameter\CD_Parameter\obj\Debug\CD_Param.dll
+D:\Develope\CD_Simulator\CD_Simulator\CD_Parameter\CD_Parameter\obj\Debug\CD_Param.pdb
